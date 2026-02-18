@@ -3,39 +3,12 @@
 markdown
 # Статический сайт на Python
 
-[![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-
 Статический сайт, сгенерированный с помощью Python-движка для генерации статических сайтов.
 
 ## 📋 О проекте
 
 Этот репозиторий содержит исходный код и контент для статического сайта, который генерируется специальным Python-движком. Сайт состоит из статических HTML, CSS, JavaScript файлов, что обеспечивает высокую скорость загрузки и безопасность.
 
-## 🚀 Особенности
-
-- **Статическая генерация** - быстрая загрузка страниц
-- **Python-движок** - гибкость и расширяемость
-- **Markdown поддержка** - удобное написание контента
-- **Шаблонизация** - переиспользуемые компоненты
-- **Оптимизация** - минификация и сжатие ресурсов
-
-## 📁 Структура проекта
-.
-├── src/ # Исходные файлы
-│ ├── content/ # Контент (Markdown файлы)
-│ ├── templates/ # HTML шаблоны
-│ ├── static/ # Статические файлы (CSS, JS, images)
-│ └── config.py # Конфигурация сайта
-├── build/ # Сгенерированный сайт (автоматически)
-├── engine/ # Python движок генерации
-│ ├── generator.py # Основной генератор
-│ ├── markdown_parser.py # Парсер Markdown
-│ └── template_engine.py # Движок шаблонов
-├── requirements.txt # Зависимости Python
-└── generate.py # Скрипт генерации сайта
-
-text
 
 ## ⚡ Быстрый старт
 
@@ -75,19 +48,7 @@ python -m http.server 8000
 npx serve build
 Затем откройте http://localhost:8000 в браузере.
 
-🛠 Конфигурация
-Основные настройки сайта находятся в src/config.py:
 
-python
-SITE_CONFIG = {
-    'title': 'Мой статический сайт',
-    'description': 'Описание сайта',
-    'base_url': 'https://example.com',
-    'author': 'Ваше имя',
-    'language': 'ru',
-    'build_dir': 'build',
-    'src_dir': 'src'
-}
 📝 Добавление контента
 Создание новой страницы
 Создайте Markdown файл в src/content/:
@@ -152,5 +113,5 @@ pip install -e .
 bash
 python -m pytest tests/
 📄 Лицензия
-Этот проект распространяется под лицензией MIT. Подробнее см. в файле LICENSE.
+
 
