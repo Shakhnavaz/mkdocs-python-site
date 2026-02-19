@@ -1,3 +1,4 @@
-site_name: My Docs
-nav:
-  - Home: index.md 
+site_name: My Site
+site_url: https://shakhnavaz.github.io/mkdocs-python-site/
+theme: 
+  name: material
