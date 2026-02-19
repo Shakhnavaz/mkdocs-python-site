@@ -1,4 +1,4 @@
-site_name: My Site
+site_name: MkDocs Python Site
 site_url: https://shakhnavaz.github.io/mkdocs-python-site/
 theme: 
   name: material

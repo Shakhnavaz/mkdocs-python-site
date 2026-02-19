@@ -1,18 +1,28 @@
-# Welcome to MkDocs
+# Статический сайт, сгенерированный Mkdocs
 
-## Hello World!
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+MkDocs — это быстрый, простой и стильный генератор статических сайтов, который создан для создания документации проектов/
 
-## Commands
+### Установка зависимостей
+    pip install -r requirements.txt
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+### Запуск локального сервера разработки
+    mkdocs serve
+После запуска сервер будет доступен по адресу http://127.0.0.1:8000. Сайт будет автоматически обновляться при изменении файлов в папке docs/.
 
-## Project layout
+### Сборка статического сайта (опционально)
+Для создания статической версии сайта в папке site/:
 
-    mkdocs.yml    # The configuration file.
+    mkdocs build
+
+Все настройки сайта (тема, навигация, плагины) управляются через один единственный YAML-файл (mkdocs.yml)
+
+## Структура проекта
+
+    mkdocs.yml    # Конфигурационный файл.
     docs/
-        index.md  # The documentation homepage.
-        page 2
+        index.md  # Домашняя страница .
+        page 2 # вторая страница для демонстрации
+
+## Отчет о проделанной работе 
+
+Автоматизирован процесс деплоя на Github Pages используя CI/CD инструмент GH Actions.
