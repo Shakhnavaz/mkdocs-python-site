@@ -45,8 +45,8 @@ markdown_extensions:
   - md_in_html
 
 # Настройки репозитория GitHub
-repo_name: static-site-mkdocs
-repo_url: https://github.com/aka-Steam/static-site-mkdocs
+repo_name: mkdocs-python-site
+repo_url: https://github.com/shakhnavaz/mkdocs-python-site
 edit_uri: edit/main/docs/
 
 theme:
