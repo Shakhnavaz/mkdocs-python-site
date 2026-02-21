@@ -164,7 +164,6 @@ mkdocs build
 <!-- Основные метаданные -->
 <meta name="description" content="{{ config.site_description }}">
 <meta name="author" content="{{ config.site_author }}">
-<meta name="keywords" content="IT, Россия, рынок, анализ, инвестиции">
 
 <!-- Open Graph для соцсетей -->
 <meta property="og:title" content="{{ page.title }} - {{ config.site_name }}">

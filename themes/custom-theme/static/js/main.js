@@ -96,6 +96,6 @@
         });
     }
 
-    console.log('%cIT Рынок России', 'color: #2563eb; font-size: 20px; font-weight: bold;');
+    console.log('%cIT ', 'color: #2563eb; font-size: 20px; font-weight: bold;');
     console.log('%cКастомная тема MkDocs загружена', 'color: #6b7280; font-size: 12px;');
 })();
