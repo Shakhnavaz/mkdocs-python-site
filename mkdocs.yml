@@ -1,4 +1,55 @@
-site_name: MkDocs Python Site
+# Основная информация о сайте
+site_name: Computer Science
+site_description: Сайт о мире Computer Science
 site_url: https://shakhnavaz.github.io/mkdocs-python-site/
-theme: 
-  name: material
+
+# Структура навигации сайта 
+nav:
+  - Главная: index.md
+  - Алгоритмы: algorithms.md
+
+# Расширения Markdown для расширенной функциональности
+markdown_extensions:
+  # Подсветка синтаксиса кода с якорями для номеров строк
+  - pymdownx.highlight:
+      anchor_linenums: true  # Создает якоря для каждой строки кода
+  
+  # Подсветка синтаксиса встроенного кода (inline code)
+  - pymdownx.inlinehilite
+  
+  # Поддержка включения файлов (snippets) в Markdown
+  - pymdownx.snippets
+  
+  # Расширенные блоки кода с поддержкой кастомных форматов
+  - pymdownx.superfences:
+      custom_fences:
+        # Поддержка диаграмм Mermaid
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  
+  # Блоки-уведомления (admonitions): note, warning, tip и т.д.
+  - admonition
+  
+  # Сворачиваемые блоки (details/summary)
+  - pymdownx.details
+  
+  # Вкладки (tabs) для организации контента
+  - pymdownx.tabbed:
+      alternate_style: true  # Альтернативный стиль вкладок
+  
+  # Добавление HTML атрибутов к элементам Markdown
+  - attr_list
+  
+  # Разрешение использования HTML внутри Markdown
+  - md_in_html
+
+# Настройки репозитория GitHub
+repo_name: static-site-mkdocs
+repo_url: https://github.com/aka-Steam/static-site-mkdocs
+edit_uri: edit/main/docs/
+
+theme:
+  name: null
+  custom_dir: themes/custom-theme
+  locale: ru 
